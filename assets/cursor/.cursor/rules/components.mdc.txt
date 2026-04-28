@@ -1,0 +1,20 @@
+---
+description: Component conventions for src/components/. Auto-attached when any file in that folder is open or edited.
+globs: src/components/**/*.jsx
+alwaysApply: false
+---
+
+# src/components conventions
+
+- Default export only. Use `export default function ComponentName`.
+- Plain JSX — no TypeScript, no .tsx.
+- Double quotes for all string literals.
+- No icon library imports — none are installed in this repo.
+- Props are destructured in the function signature: `function Card({ user })`, not `function Card(props)`.
+- No CSS-in-JS. Apply class names from App.css or inline style only when the class does not exist yet.
+
+## Marker rule (workshop only)
+
+End every reply that reads or edits a file in this folder with the exact word:
+
+COMPONENT
